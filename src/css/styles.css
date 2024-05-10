@@ -1,0 +1,47 @@
+/********* NAVBAR ********/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+/* CHECKBOX NAVBAR */
+#checkbox_toggle{
+    display: none;
+}
+
+.burger{
+    display: none;
+    font-size: 24px;
+}
+
+#checkbox_toggle:checked ~ nav{
+    display: block;
+}
+
+/* MEDIA QUERIES NAVBAR*/
+@media (max-width: 768px){
+    .menu{
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    #checkbox_toggle:checked ~ .menu{
+        display: block;
+    }
+
+    .burger{
+        display: block;
+    }
+}
+
