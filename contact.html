@@ -11,10 +11,63 @@
 </head>
 <body>
     <header>
-
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="images/osm_logo.png" alt="Oslo Science Museum logo" class="logo">
+            </a>
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle">
+                <label for="checkbox_toggle" class="burger"><i class="fa-solid fa-bars"></i></label>
+                <div class="menu">
+                    <li class="menu_hover"><a href="exhibitions.html">WHAT'S ON?</a></li>
+                    <li class="menu_hover active"><a href="contact.html">CONTACT</a></li>
+                    <li><a href="contribute.html" class="menu_support">SUPPORT US</a></li>
+                </div>
+            </ul>
+        </nav>
     </header>
     <main>
+        <section class="contact-top">
+            <h1>CONTACT US</h1>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>ADDRESS</h2>
+                <p>Blomsterveien 4, 0165 Oslo</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile-button"></i>
+                <p>PHONE</h2>
+                <p>+47 234 56 789</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <p>EMAIL</h2>
+                <p>contact@oslosciencemuseum.com</p>
+            </div>
+        </section>
+        <section>
+            <h2>SEND US A MESSAGE</h2>
+            <div>
+                <form action="/success_page">
+                    <label for="full-name">FULL NAME*</label>
+                    <input type="text" id="full-name" name="fullname" placeholder="Your full name">
 
+                    <label for="email">EMAIL ADDRESS*</label>
+                    <input type="text" id="email" name="email" placeholder="Your email address">
+
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="text" id="phone" name="phone" placeholder="Your phone number">
+
+                    <label for="subject">SUBJECT*</label>
+                    <input type="text" id="subject" name="subject" placeholder="What is it regarding?">
+
+                    <label for="message">MESSAGE</label>
+                    <input type="text" id="message" name="message" placeholder="Type your message here">
+
+                    <input type="submit" value="SEND">
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
 

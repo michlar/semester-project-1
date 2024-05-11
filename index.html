@@ -6,28 +6,62 @@
     <meta name="description" content="Explore the wonders of science at our museum! Discover captivating exhibitions, engaging events, and interactive experiences for the whole family.">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c6cec058e8.js" crossorigin="anonymous"></script>
     <title>Oslo Science Museum</title>
 </head>
-<body>
+<body class="index-body">
     <header>
         <nav class="navbar">
             <a href="index.html">
-                <img src="" alt="Oslo Science Museum logo" class="logo">
+                <img src="images/osm_logo.png" alt="Oslo Science Museum logo" class="logo">
             </a>
             <ul class="nav-links">
                 <input type="checkbox" id="checkbox_toggle">
                 <label for="checkbox_toggle" class="burger"><i class="fa-solid fa-bars"></i></label>
                 <div class="menu">
-                    <li><a href="exhibitions.html">WHAT'S ON?</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="contribute.html">SUPPORT US</a></li>
+                    <li class="menu_hover"><a href="exhibitions.html">WHAT'S ON?</a></li>
+                    <li class="menu_hover"><a href="contact.html">CONTACT</a></li>
+                    <li><a href="contribute.html" class="menu_support">SUPPORT US</a></li>
                 </div>
             </ul>
         </nav>
     </header>
     <main>
-
+        <section class="index-banner">
+            <a href="exhibitions.html">
+               <div class="index-banner__text">
+                    <h1>History of Gaming Technology</h1>
+                    <h2>Discover the iconic gaming consoles from the past and experience the nostalgia of retro gaming.</h2>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </a>
+        </section>
+        <section class="featured-section">
+            <div class="featured-container">
+                <img src="images/exhibition-1863344_1920.jpg" alt="Empty museum">
+                <div class="text-container">
+                    <h3>SUPPORT US</h3>
+                    <p>Fuel discovery and exploration. Donate to our science museum today!</p>
+                </div>
+            </div>
+            <div class="featured-container">
+                <img src="images/scientific-2040795_1280.jpg" alt="Female scientist working on a large machine">
+                <div class="text-container">
+                    <h3>OUR EXHIBITIONS</h3>
+                    <p>Explore over 25 fascinating exhibitions and engage with 100 interactive installations.</p>
+                </div>
+            </div>
+            <div class="featured-container">
+                <img src="images/nastya-dulhiier-Ihi56-Qs39U-unsplash 1.jpg" alt="Old telephones in glass stand at museum">
+                <div class="text-container">
+                    <h3>GET IN TOUCH</h3>
+                    <p>Our location and how to connect with us</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         
