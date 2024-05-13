@@ -6,7 +6,7 @@ a{
     color: #000000;
 }
 
-h1, h2, h3, p, a, li, label{
+h1, h2, h3, p, a, li, label, input{
     font-family: "Barlow", Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -337,12 +337,77 @@ h1, h2, h3, p, a, li, label{
 }
 
 
-
-
-
-
-
 /********** CONTRIBUTE  ***********/
+.contribute-body{
+    background-color: var(--color-secondary);
+}
+
+.contribute-top{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.contribute-top h1{
+    font-weight: 500;
+}
+
+.contribute-top h1,
+.contribute-top h2{
+    font-size: 28px;
+    margin: 3rem;
+}
+
+
+.contribute-top p{
+    margin: 3rem 18rem;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.contribute-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contribute-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: 1rem;
+    width: 15vw;
+}
+
+.contribute-input input,
+.button{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.button{
+    border: solid #000000 1.5px;
+}
+
+
+.choose-amount{
+    margin: 2rem;
+    padding: 0.3rem;
+    border: solid #000000 1.5px;
+    font-size: 20px;
+}
+
+.choose-amount:hover{
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.choose-amount:focus{
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+    cursor: pointer;
+}
 
 
 
