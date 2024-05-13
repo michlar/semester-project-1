@@ -6,7 +6,7 @@ a{
     color: #000000;
 }
 
-h1, h2, h3, p, a{
+h1, h2, h3, p, a, li, label{
     font-family: "Barlow", Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -30,14 +30,12 @@ h1, h2, h3, p, a{
 }
 
 .logo{
-    width: 150px;
+    width: 200px;
     margin-left: 6rem;
 }
 
 .menu_support{
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
+    border: 2px solid black;
 }
 
 .menu a{
@@ -153,7 +151,6 @@ h1, h2, h3, p, a{
 
 .featured-container img{
     width: 100%;
-
     object-fit: cover;
 }
 
@@ -164,14 +161,185 @@ h1, h2, h3, p, a{
     box-sizing: border-box;
 }
 
+/********** EXHIBITIONS  **********/
 
+/* TOP MENU */
+.exhibitions-body{
+    background-color: #000000;
+}
 
+.exhibitions-menu{
+    text-align: center;
+    padding: 6rem;
+    background: var(--color-secondary);
+}
+
+.exhibitions-menu h1{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.menu-button{
+    font-size: 22px;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 0 3rem 4rem 1rem;
+    border: 2px solid;
+}
+
+.menu-button:hover{
+    background-color: var(--color-primary);
+    color:#FFFFFF;
+}
+
+/* Exhibitions view */
+
+.exhibitions-section{
+    width: 100%;
+}
+.exhibitions-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+}
+
+.exhibitions-container img{
+    width: 50vw;
+}
+
+.exhibitions-text{
+    padding: 8vw;
+    text-align: center;
+}
+
+.exhibitions-text h2{
+    font-size: 2vw;
+    font-weight: 600;
+    padding-bottom: 1vw;
+}
+
+.exhibitions-text p{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.3vw;
+    font-weight: 300;
+    padding: 2vw;
+}
+
+/* Exhibitions view: Background colors */
+.space{
+    background-color: #7D9ABC;
+}
+
+.human{
+    background-color: #EDF1CC;
+}
+
+.tech{
+    background-color: #CDDADB;
+}
+
+.biology{
+    background-color: #C7C5C9;
+}
+
+.dinosaur{
+    background-color: #A48167;
+}
+
+/* Events view */
+
+.events-section{
+    background-color: var(--color-secondary);
+
+}
+
+.events-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+}
 
 /************ CONTACT *************/
 
+.contact-body{
+    background-color: #000000;
+}
+
+.contact-top{
+    display: flex;
+    padding: 4rem;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-top i{
+    background-color: #FFFFFF;
+    font-size: 2rem;
+    border-radius: 100%;
+    padding: 1em;
+    margin-bottom: 1rem;
+    
+}
+
+.contact-top p{
+    color: #FFFFFF;
+    padding: 0.5rem;
+}
+
+/* Contact form */
+
+.contact-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFFFFF;
+    margin: 0 5rem;
+}
+
+.contact-form-container h2{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.contact-form{
+    padding: 40px;
+    width: 20vw;
+    margin: 0 auto;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="submit"],
+.contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="submit"]{
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+    border-style: none;
+    padding: 15px;
+}
+
+#message{
+    font-family: "Barlow", Verdana, Geneva, Tahoma, sans-serif;
+    height: 4rem;
+}
 
 
-/********** EXHIBITIONS  **********/
+
+
+
 
 
 /********** CONTRIBUTE  ***********/

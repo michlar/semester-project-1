@@ -6,10 +6,13 @@
     <meta name="description" content="Get in touch with us! Find our address, phone numbers, and contact form for inquiries, feedback, and more.">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c6cec058e8.js" crossorigin="anonymous"></script>
     <title>Get in touch</title>
 </head>
-<body>
+<body class="contact-body">
     <header>
         <nav class="navbar">
             <a href="index.html">
@@ -27,28 +30,30 @@
         </nav>
     </header>
     <main>
-        <section class="contact-top">
+        <section>
             <h1>CONTACT US</h1>
-            <div>
-                <i class="fa-solid fa-location-dot"></i>
-                <p>ADDRESS</h2>
-                <p>Blomsterveien 4, 0165 Oslo</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-mobile-button"></i>
-                <p>PHONE</h2>
-                <p>+47 234 56 789</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-envelope"></i>
-                <p>EMAIL</h2>
-                <p>contact@oslosciencemuseum.com</p>
+            <div class="contact-top">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>ADDRESS</h2>
+                    <p>Blomsterveien 4, 0165 Oslo</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-button"></i>
+                    <p>PHONE</h2>
+                    <p>+47 234 56 789</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>EMAIL</h2>
+                    <p>contact@oslosciencemuseum.com</p>
+                </div>
             </div>
         </section>
-        <section>
-            <h2>SEND US A MESSAGE</h2>
+        <section class="contact-form-container">
             <div>
-                <form action="/success_page">
+                <h2>SEND US A MESSAGE</h2>
+                <form action="/success_page" class="contact-form">
                     <label for="full-name">FULL NAME*</label>
                     <input type="text" id="full-name" name="fullname" placeholder="Your full name">
 
@@ -62,7 +67,7 @@
                     <input type="text" id="subject" name="subject" placeholder="What is it regarding?">
 
                     <label for="message">MESSAGE</label>
-                    <input type="text" id="message" name="message" placeholder="Type your message here">
+                    <textarea type="text" id="message" name="message" placeholder="Type your message here"></textarea>
 
                     <input type="submit" value="SEND">
                 </form>
