@@ -482,8 +482,9 @@ h1, h2, h3, p, a, li, label, input, span, button{
     margin-bottom: 5rem;
     width: 100%;
     max-width: 500px;
-    border: solid darkgray 1px;
-    padding: 1rem;
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    padding: 2rem;
 }
 
 /* Contact form Input and textarea*/
