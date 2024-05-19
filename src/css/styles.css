@@ -433,6 +433,7 @@ h1, h2, h3, p, a, li, label, input, span, button{
 .contact-top i:hover{
     background-color: var(--color-primary);
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .contact-top p{
@@ -717,9 +718,15 @@ h1, h2, h3, p, a, li, label, input, span, button{
         max-width: 500px;
     }
 
+    .volunteer-section p,
+    .donate-section p{
+        font-size: 16px;
+    }
+
     .choose-amount{
         font-size: 18px;
         padding: 0.4rem 0.8rem;
+        margin: 1rem;
     }
 
     .donate-input{
