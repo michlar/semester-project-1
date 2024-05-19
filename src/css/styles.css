@@ -46,7 +46,7 @@ h1, h2, h3, p, a, li, label, input, span, button{
     text-decoration: underline;
 }
 
-/* CHECKBOX NAVBAR */
+/* Navbar Checkbox */
 #checkbox_toggle{
     display: none;
 }
@@ -60,7 +60,7 @@ h1, h2, h3, p, a, li, label, input, span, button{
     display: block;
 }
 
-/* HOVER STATE NAVBAR */
+/* Navbar hover states */
 
 .menu_hover:hover{
     text-decoration: underline;
@@ -72,7 +72,7 @@ h1, h2, h3, p, a, li, label, input, span, button{
     color: #FFFFFF;
 }
 
-/* MEDIA QUERIES NAVBAR*/
+/* Navbar media queries*/
 @media (max-width: 920px){
     .menu{
         display: none;
@@ -100,14 +100,14 @@ h1, h2, h3, p, a, li, label, input, span, button{
 
 /************* INDEX  *************/
 
-/* INDEX BANNER */
+/* Index banner */
 
 .index-body{
     background-color: #000000;
 }
 
 .index-banner{
-    background-image: url(/images/lorenzo-herrera-p0j-mE6mGo4-unsplash-1.png);
+    background-image: url(../../images/lorenzo-herrera-p0j-mE6mGo4-unsplash-1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -184,6 +184,7 @@ h1, h2, h3, p, a, li, label, input, span, button{
     font-weight: 300;
 }
 
+/* Index media queries */
 @media (max-width: 920px){
     .index-banner__text{
         margin: 2rem;
@@ -246,7 +247,7 @@ h1, h2, h3, p, a, li, label, input, span, button{
 
 /********** EXHIBITIONS  **********/
 
-/* TOP MENU */
+/* Top menu */
 .exhibitions-body{
     background-color: #000000;
 }
@@ -362,6 +363,8 @@ h1, h2, h3, p, a, li, label, input, span, button{
     height: auto;
 }
 
+/* Events and exhibitions media queries */
+
 @media (max-width: 790px){
     .exhibitions-container{
         grid-template-columns: 1fr;
@@ -437,6 +440,7 @@ h1, h2, h3, p, a, li, label, input, span, button{
     padding: 0.5rem;
 }
 
+/* Museum information */
 .museum-info-section{
     background-color: #FFFFFF;
     margin: 0 auto;
@@ -482,7 +486,7 @@ h1, h2, h3, p, a, li, label, input, span, button{
     padding: 1rem;
 }
 
-/* Input and textarea*/
+/* Contact form Input and textarea*/
 .contact-form input[type="text"],
 .contact-form input[type="submit"],
 .contact-form textarea{
@@ -689,6 +693,7 @@ h1, h2, h3, p, a, li, label, input, span, button{
     cursor: pointer;;
 }
 
+/* Contribution media queries */
 
 @media (max-width: 790px){
     .contribute-top h1{
