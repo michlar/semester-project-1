@@ -398,9 +398,6 @@ h1, h2, h3, p, a, li, label, input, span, button{
         padding: 0;
     }
 
-
-
-    
 }
 
 /************ CONTACT *************/
@@ -412,24 +409,49 @@ h1, h2, h3, p, a, li, label, input, span, button{
 .contact-top{
     display: flex;
     padding: 4rem;
+    margin: 0 auto;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    gap: 1rem;
 }
 
 .contact-top i{
     background-color: #FFFFFF;
     font-size: 2rem;
     border-radius: 100%;
-    padding: 1.2em;
+    padding: 2em;
     margin-bottom: 1rem;
-    
+}
+
+.contact-top i:hover{
+    background-color: var(--color-primary);
+    color: #FFFFFF;
 }
 
 .contact-top p{
     color: #FFFFFF;
     padding: 0.5rem;
+}
+
+.museum-info-section{
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.museum-info-section h2{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 1rem auto;
+}
+
+.museum-info-section p{
+    max-width: 400px;
+    padding: 1rem;
 }
 
 /* Contact form */
@@ -449,9 +471,11 @@ h1, h2, h3, p, a, li, label, input, span, button{
 }
 
 .contact-form{
-    padding-bottom: 5rem;
+    margin-bottom: 5rem;
     width: 100%;
     max-width: 500px;
+    border: solid darkgray 1px;
+    padding: 1rem;
 }
 
 /* Input and textarea*/
@@ -479,6 +503,17 @@ h1, h2, h3, p, a, li, label, input, span, button{
 }
 
 /* Contact Media Queries */
+
+@media (max-width: 1280px){
+    .museum-info-section{
+        flex-wrap: wrap;
+    }
+
+    .museum-info-section > div{
+        margin-bottom: 2rem;
+    }
+}
+
 @media (max-width: 980px){
     .contact-top{
         flex-direction: column;
@@ -514,7 +549,11 @@ h1, h2, h3, p, a, li, label, input, span, button{
 }
 
 @media (max-width: 480px){
-    
+    .museum-info-section img{
+        max-width: 100%;
+        height: auto;
+    }
+
     .contact-form-section h2{
         font-size: 1rem;
     }
@@ -553,7 +592,9 @@ h1, h2, h3, p, a, li, label, input, span, button{
 }
 
 
-.contribute-top p{
+.contribute-top p,
+.volunteer-section p,
+.donate-section p{
     margin: 0 auto 3rem;
     max-width: 800px;
     font-size: 18px;
@@ -561,17 +602,36 @@ h1, h2, h3, p, a, li, label, input, span, button{
     padding: 0 1rem;
 }
 
+.volunteer-section{
+    text-align: center;
+    margin-top: 4rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.volunteer-section > div{
+    margin-bottom: 3rem;
+}
+
+.volunteer-section h3,
+.donate-section h3{
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+
 /* Contribute: Choose amount to donate*/
 
-.contribute-container{
+.donate-section{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     padding: 0 1rem;
+    margin-bottom: 8rem;
 }
 
-.contribute-container div:first-child{
+.donate-section div:first-child{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -598,25 +658,25 @@ h1, h2, h3, p, a, li, label, input, span, button{
     border: solid var(--color-primary) 1.5px;
 }
 
-.contribute-input{
+.donate-input{
     width: 100%;
     max-width: 300px;
 }
 
-.contribute-input input,
-.contribute-input button{
+.donate-input input,
+.donate-input button{
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
     margin: 0.5rem;
 }
 
-.contribute-input button{
+.donate-input button{
     border: solid #000000 1.5px;
     
 }
 
-.contribute-input button:hover{
+.donate-input button:hover{
     background-color: var(--color-primary);
     color: #FFFFFF;
     border-color: var(--color-primary);
@@ -635,6 +695,7 @@ h1, h2, h3, p, a, li, label, input, span, button{
 
     .contribute-top p{
         font-size: 16px;
+        max-width: 500px;
     }
 
     .choose-amount{
@@ -642,7 +703,7 @@ h1, h2, h3, p, a, li, label, input, span, button{
         padding: 0.4rem 0.8rem;
     }
 
-    .contribute-input{
+    .donate-input{
         width: 100%;
     }
 }
@@ -651,10 +712,21 @@ h1, h2, h3, p, a, li, label, input, span, button{
 
 .terms-and-privacy-section{
     margin-top: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
-.terms-and-privacy-main{
-    margin: 0 20em;
+.terms-and-privacy-top{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.terms-and-privacy-top h1{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 1rem;
 }
 
 .terms-and-privacy-section h2{
@@ -663,21 +735,13 @@ h1, h2, h3, p, a, li, label, input, span, button{
     font-weight: 500;
 }
 
-.terms-and-privacy-top h1{
-    font-size: 28px;
-    font-weight: 500;
-}
-
-.terms-and-privacy-top{
-    text-align: center;
-}
-
 .terms-and-privacy-section ul{
     list-style: disc;
+    padding-left: 0.5rem;
 }
 
 .terms-and-privacy-section li{
-    padding: 0.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .bold{
@@ -686,25 +750,40 @@ h1, h2, h3, p, a, li, label, input, span, button{
 }
 
 
+@media (max-width: 768px){
+    .terms-and-privacy-section{
+        max-width: 500px
+    }
+    
+    .terms-and-privacy-section h2{
+        font-size: 22px;
+    }
+
+    .terms-and-privacy-section p{
+        font-size: 18px;
+    }
+}
+
 
 
 /********* TERMS OF USE  **********/
 
 
 /************* FOOTER *************/
+footer{
+    background-color: #000000;
+    padding: 3rem;
+}
+
 .footer-section{
     color: #FFFFFF;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 10rem;
-    padding: 3rem;
+    justify-content: space-between;
+    gap: 3rem;
     margin-top: 2rem;
 }
 
-footer{
-    background-color: #000000;
-}
 
 .footer-section a{
     color: #FFFFFF;
@@ -764,4 +843,9 @@ footer{
     margin-bottom: 2rem;
 }
 
+@media (max-width: 780px){
+    .fa-arrow-up{
+        display: none;
+    }
+}
 
