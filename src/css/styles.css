@@ -69,13 +69,20 @@ h1, h2, h3, p, a, li, label, input, span, button{
 }
 
 /* MEDIA QUERIES NAVBAR*/
-@media (max-width: 768px){
+@media (max-width: 920px){
     .menu{
         display: none;
         position: absolute;
+        margin-top: 2rem;
         right: 0;
         left: 0;
         text-align: center;
+        padding: 3rem;
+        background-color: #FFFFFF;
+    }
+
+    .menu li{
+        padding: 1rem;
     }
 
     #checkbox_toggle:checked ~ .menu{
@@ -87,11 +94,6 @@ h1, h2, h3, p, a, li, label, input, span, button{
     }
 }
 
-
-/************** FOOTER ************/
-
-
-
 /************* INDEX  *************/
 
 /* INDEX BANNER */
@@ -101,64 +103,141 @@ h1, h2, h3, p, a, li, label, input, span, button{
 }
 
 .index-banner{
-    background-image: url(/images/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg);
+    background-image: url(/images/lorenzo-herrera-p0j-mE6mGo4-unsplash\ 1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .index-banner__text{
     background-color: #FFFFFF;
-    float: right;
-    margin: 20rem 3rem 0 0 ;
+    margin: 3rem;
     padding: 3em;
-    width: 31vw;
-    min-height: 1vh;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .index-banner__text h1{
     font-weight: 500;
-    font-size: 30px;
+    font-size: 2rem;
     margin-bottom: 0.8em;
 }
 
 .index-banner__text h2{
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 300;
+    margin-bottom: 1rem;
 }
 
 .index-banner__text i{
-    float: right;
-    margin: 1rem 0.5rem;
     font-size: 26px;
+    
 }
 
-/* FEATURED INDEX */
+/* Index: Featured */
 
 .featured-section{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    padding: 2rem 1rem;
+    gap: 1rem;
 }
 
 .featured-container{
     width: 30%;
-    position: relative;
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
 }
 
 .featured-container img{
     width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
 .text-container{
-    flex: 1;
     background-color: #FFFFFF;
-    padding: 10px;
-    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+}
+
+.text-container h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.text-container p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+@media (max-width: 920px){
+    .index-banner__text{
+        margin: 2rem;
+        padding: 2rem;
+        max-width: 70%;
+    }
+
+    .index-banner__text h1{
+        font-size: 1rem;
+    }    
+
+    .index-banner__text h2{
+        font-size: 0.8rem;
+    }
+
+    .featured-container{
+        width: 45%;
+        justify-content: center;
+    }
+
+    .index-banner{
+        min-height: 40vh;
+    }
+    
+}
+
+@media (max-width: 480px){
+    .index-banner{
+        min-height: 50vh;
+    }
+
+    .index-banner__text{
+        padding: 1rem;
+    }
+
+    .index-banner__text h1{
+        font-size: 1.3rem;
+    }
+
+    .index-banner__text h2{
+        font-size: 1rem;
+    }
+
+    .featured-container{
+        width: 100%;
+    }
+
+    .text-container{
+        height: auto;
+    }
+
+    .text-container h3{
+        font-size: 1rem;
+    }
+
+    .text-container p{
+        font-size: 0.8rem;
+    }
 }
 
 /********** EXHIBITIONS  **********/
@@ -170,8 +249,9 @@ h1, h2, h3, p, a, li, label, input, span, button{
 
 .exhibitions-menu{
     text-align: center;
-    padding: 6rem;
+    padding: 6rem  0;
     background: var(--color-secondary);
+    width: 100%;
 }
 
 .exhibitions-menu h1{
@@ -184,8 +264,7 @@ h1, h2, h3, p, a, li, label, input, span, button{
 .menu-button{
     font-size: 22px;
     padding: 1rem;
-    box-sizing: border-box;
-    margin: 0 3rem 4rem 1rem;
+    margin: 0 1rem 4rem 1rem;
     border: 2px solid;
 }
 
@@ -198,68 +277,130 @@ h1, h2, h3, p, a, li, label, input, span, button{
 
 .exhibitions-section{
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+.exhibitions-section h2{
+    color: #FFFFFF;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
 .exhibitions-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 1rem;
+    margin: 2rem 0;
 }
 
 .exhibitions-container img{
-    width: 50vw;
+    width: 100%;
+    height: auto;
 }
 
 .exhibitions-text{
-    padding: 8vw;
+    padding: 6vw;
     text-align: center;
 }
 
-.exhibitions-text h2{
-    font-size: 2vw;
+.exhibitions-text h3,
+.events-container h3{
+    font-size: 1.5rem;
     font-weight: 600;
-    padding-bottom: 1vw;
+    padding-bottom: 1.2rem;
 }
 
 .exhibitions-text p{
-    box-sizing: border-box;
     width: 100%;
-    font-size: 1.3vw;
+    font-size: 1.2rem;
     font-weight: 300;
-    padding: 2vw;
+    padding: 1rem;
 }
 
 /* Exhibitions view: Background colors */
-.space{
-    background-color: #7D9ABC;
-}
+.space{ background-color: #7D9ABC;}
 
-.human{
-    background-color: #EDF1CC;
-}
+.human{ background-color: #EDF1CC;}
 
-.tech{
-    background-color: #CDDADB;
-}
+.tech{background-color: #CDDADB;}
 
-.biology{
-    background-color: #C7C5C9;
-}
+.biology{background-color: #C7C5C9;}
 
-.dinosaur{
-    background-color: #A48167;
-}
+.dinosaur{background-color: #A48167;}
 
 /* Events view */
-
 .events-section{
     background-color: var(--color-secondary);
-
 }
 
-.events-container{
+.events-section h2{
+    font-size: 1.5rem;
+    padding: 2rem 4rem;
+    font-weight: 500;
+}
+
+.events{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 1rem;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.events-container{
+    padding: 1rem;
+}
+
+.events-container img{
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 790px){
+    .exhibitions-container{
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .exhibitions-section h2{
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px){
+    .events{
+        grid-template-columns: 1fr;
+    }
+
+    .events-section h2{
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .exhibitions-section h2{
+        text-align: center;
+    }
+
+    .exhibitions-container{
+        padding: 1rem;
+    }
+
+    .exhibitions-container h3{
+        font-size: 18px;
+    }
+
+    .exhibitions-container p{
+        font-size: 16px;
+        padding: 0;
+    }
+
+
+
+    
 }
 
 /************ CONTACT *************/
@@ -281,7 +422,7 @@ h1, h2, h3, p, a, li, label, input, span, button{
     background-color: #FFFFFF;
     font-size: 2rem;
     border-radius: 100%;
-    padding: 1em;
+    padding: 1.2em;
     margin-bottom: 1rem;
     
 }
@@ -293,27 +434,27 @@ h1, h2, h3, p, a, li, label, input, span, button{
 
 /* Contact form */
 
-.contact-form-container{
+.contact-form-section{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: #FFFFFF;
-    margin: 0 5rem;
 }
 
-.contact-form-container h2{
+.contact-form-section h2{
     text-align: center;
     font-size: 23px;
     font-weight: 400;
+    padding: 2rem;
 }
 
 .contact-form{
-    padding: 40px;
-    width: 20vw;
-    margin: 0 auto;
+    padding-bottom: 5rem;
+    width: 100%;
+    max-width: 500px;
 }
 
+/* Input and textarea*/
 .contact-form input[type="text"],
 .contact-form input[type="submit"],
 .contact-form textarea{
@@ -329,6 +470,7 @@ h1, h2, h3, p, a, li, label, input, span, button{
     color: #FFFFFF;
     border-style: none;
     padding: 15px;
+    cursor: pointer;
 }
 
 #message{
@@ -336,6 +478,58 @@ h1, h2, h3, p, a, li, label, input, span, button{
     height: 4rem;
 }
 
+/* Contact Media Queries */
+@media (max-width: 980px){
+    .contact-top{
+        flex-direction: column;
+    }
+
+    .contact-top i,
+    .contact-top p{
+        font-size: 0.8rem;
+    }
+
+    .contact-form-container{
+        padding: 1rem;
+    }
+
+    .contact-form{
+        padding: 20px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="submit"],
+    .contact-form textarea{
+        padding: 0.8rem;
+    }
+
+    .contact-form input[type="submit"]{
+        padding: 0.8rem;
+    }
+
+    #message{
+        height: 6rem;
+    }
+
+}
+
+@media (max-width: 480px){
+    
+    .contact-form-section h2{
+        font-size: 1rem;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="submit"],
+    .contact-form textarea{
+        padding: 0.5rem;
+    }
+
+    .contact-form input[type="submit"]{
+        padding: 0.5rem;
+    }
+
+}
 
 /********** CONTRIBUTE  ***********/
 .contribute-body{
@@ -349,19 +543,22 @@ h1, h2, h3, p, a, li, label, input, span, button{
 
 .contribute-top h1{
     font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 1.5rem;
 }
 
-.contribute-top h1,
 .contribute-top h2{
-    font-size: 28px;
-    margin: 3rem;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
 }
 
 
 .contribute-top p{
-    margin: 3rem 18rem;
-    font-weight: 300;
+    margin: 0 auto 3rem;
+    max-width: 800px;
     font-size: 18px;
+    font-weight: 300;
+    padding: 0 1rem;
 }
 
 /* Contribute: Choose amount to donate*/
@@ -370,15 +567,40 @@ h1, h2, h3, p, a, li, label, input, span, button{
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.contribute-container div:first-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.choose-amount{
+    padding: 0.5rem;
+    border: solid #000000 1.5px;
+    font-size: 20px;
+}
+
+.choose-amount:hover{
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border: solid var(--color-primary) 1.5px
+}
+
+.choose-amount:focus{
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+    cursor: pointer;
+    border: solid var(--color-primary) 1.5px;
 }
 
 .contribute-input{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    gap: 1rem;
-    width: 15vw;
+    width: 100%;
+    max-width: 300px;
 }
 
 .contribute-input input,
@@ -386,10 +608,12 @@ h1, h2, h3, p, a, li, label, input, span, button{
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
+    margin: 0.5rem;
 }
 
 .contribute-input button{
     border: solid #000000 1.5px;
+    
 }
 
 .contribute-input button:hover{
@@ -399,28 +623,67 @@ h1, h2, h3, p, a, li, label, input, span, button{
     cursor: pointer;;
 }
 
-.choose-amount{
-    margin: 2rem;
-    padding: 0.3rem;
-    border: solid #000000 1.5px;
-    font-size: 20px;
+
+@media (max-width: 790px){
+    .contribute-top h1{
+        font-size: 24px;
+    }
+
+    .contribute-top h2{
+        font-size: 20px;
+    }
+
+    .contribute-top p{
+        font-size: 16px;
+    }
+
+    .choose-amount{
+        font-size: 18px;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .contribute-input{
+        width: 100%;
+    }
 }
-
-.choose-amount:hover{
-    background-color: #FFFFFF;
-    cursor: pointer;
-}
-
-.choose-amount:focus{
-    background-color: var(--color-primary);
-    color: #FFFFFF;
-    cursor: pointer;
-}
-
-
 
 /******** PRIVACY POLICY  *********/
 
+.terms-and-privacy-section{
+    margin-top: 3rem;
+}
+
+.terms-and-privacy-main{
+    margin: 0 20em;
+}
+
+.terms-and-privacy-section h2{
+    margin: 2rem 0 1rem 0;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.terms-and-privacy-top h1{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.terms-and-privacy-top{
+    text-align: center;
+}
+
+.terms-and-privacy-section ul{
+    list-style: disc;
+}
+
+.terms-and-privacy-section li{
+    padding: 0.2rem;
+}
+
+.bold{
+    font-weight: 500;
+    font-size: 18px;
+}
 
 
 
