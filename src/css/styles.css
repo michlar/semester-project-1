@@ -468,7 +468,7 @@ h1, h2, h3, p, a, li, label, input, span, button{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: var(--color-secondary);
 }
 
 .contact-form-section h2{
@@ -476,15 +476,16 @@ h1, h2, h3, p, a, li, label, input, span, button{
     font-size: 23px;
     font-weight: 400;
     padding: 2rem;
+    
 }
 
 .contact-form{
     margin-bottom: 5rem;
     width: 100%;
     max-width: 500px;
-    background-color: var(--color-secondary);
     border-radius: 5px;
     padding: 2rem;
+    margin: 0 auto;
 }
 
 /* Contact form Input and textarea*/
@@ -567,6 +568,12 @@ h1, h2, h3, p, a, li, label, input, span, button{
 
     .contact-form-section h2{
         font-size: 1rem;
+    }
+
+    .contact-form{
+        padding: 10px;
+        width: 100%;
+        margin: auto;
     }
 
     .contact-form input[type="text"],
