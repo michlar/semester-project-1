@@ -42,6 +42,10 @@ h1, h2, h3, p, a, li, label, input, span, button{
     padding: 0.4rem;
 }
 
+.active{
+    text-decoration: underline;
+}
+
 /* CHECKBOX NAVBAR */
 #checkbox_toggle{
     display: none;
