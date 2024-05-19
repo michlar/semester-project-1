@@ -765,25 +765,20 @@ h1, h2, h3, p, a, li, label, input, span, button{
 }
 
 
-
-/********* TERMS OF USE  **********/
-
-
 /************* FOOTER *************/
-footer{
-    background-color: #000000;
-    padding: 3rem;
-}
-
 .footer-section{
     color: #FFFFFF;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 3rem;
+    justify-content: space-evenly;
+    gap: 10rem;
+    padding: 3rem;
     margin-top: 2rem;
 }
 
+footer{
+    background-color: #000000;
+}
 
 .footer-section a{
     color: #FFFFFF;
@@ -843,9 +838,4 @@ footer{
     margin-bottom: 2rem;
 }
 
-@media (max-width: 780px){
-    .fa-arrow-up{
-        display: none;
-    }
-}
 
